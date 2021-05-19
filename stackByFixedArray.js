@@ -34,6 +34,7 @@ class StackByFixedArray {
       console.log('빈 데이터 입니다.')
       return true;
     }
+
   }
 
   push(value) {
@@ -58,8 +59,9 @@ class StackByFixedArray {
 
   peak() {
     if (this.isEmpty()) {
-      return this.stack[this.topIdx - 1];
+      return
     }
+    return this.stack[this.topIdx - 1];
   }
 }
 
